@@ -1,1 +1,3 @@
-export const schemaTypes = []
+import {siteSettingsType} from './siteSettingsType'
+
+export const schemaTypes = [siteSettingsType]
