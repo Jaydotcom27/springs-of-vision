@@ -29,8 +29,8 @@ export default async function Home() {
     ? urlFor(settings.heroImage).width(2400).height(1600).quality(85).url()
     : 'https://images.unsplash.com/photo-1529634806980-85c3dd6d34ac?auto=format&fit=crop&w=2400&q=80'
 
-  const headline = settings?.heroHeadline
-  const subheadline = settings?.heroSubheadline
+  const headline = settings?.heroHeadline ?? 'Default headline'
+  const subheadline = settings?.heroSubheadline ?? 'Default subheadline'
 
   return (
     <>
